@@ -109,6 +109,8 @@ def render_markdown(cards: list[dict]) -> str:
         lines.append(f"## 需求 {i}")
         lines.append(f"- **需求名称**：{card['title']}")
         lines.append(f"- **需求描述**：{card['description']}")
+        lines.append(f"- **需求来源**：UX和策划合议需求")
+        lines.append(f"- **指派人**：")
         lines.append("")
 
     return "\n".join(lines)
